@@ -2,7 +2,7 @@ import {
     CustomEventName,
     HandleJsonLdAction
 } from 'vamtiger-browser-method/build/types';
-import { url } from './types';
+import { key } from './types';
 import { image } from './config.js';
 import imageSize from './image-size';
 import json from './json';
@@ -11,9 +11,7 @@ import text from './text';
 const eventName = 'vamtiger-browser-method-dequeue' as CustomEventName.vamtigerBrowserMethod;
 const action = 'vamtiger-browser-method-dequeue' as HandleJsonLdAction.dequeue;
 const params = {
-    key: url
-        .split('/')
-        .pop()
+    key
 };
 const jsonLdBase = {
     '@context': 'http://schema.org/',

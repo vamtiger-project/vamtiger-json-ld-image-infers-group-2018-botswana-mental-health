@@ -13,4 +13,6 @@ export interface ILoadScript {
     data: IAnyObject;
 }
 
-export const url = 'https://cdn.jsdelivr.net/npm/vamtiger-json-ld-infers-group-2018-botswana-mental-health';
+export const url = 'https://cdn.jsdelivr.net/npm/vamtiger-json-ld-image-infers-group-botswana-mental-health';
+
+export const key = url.split('/').pop() as string;
