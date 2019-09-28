@@ -17,6 +17,9 @@ const jsonLdBase = {
     '@context': 'http://schema.org/',
     '@type': 'ImageObject'
 };
+const eventParams = {
+    bubbles: true
+};
 
 export default async function() {
     const jsonLd = {
@@ -35,6 +38,7 @@ export default async function() {
         json
     };
     const event = new CustomEvent(eventName, {
+        ...eventParams,
         detail: {
             action,
             params: {
@@ -45,5 +49,6 @@ export default async function() {
         }
     });
 
-    self.dispatchEvent(event);
+    dispatchEvent(event);
+    console.log(event);
 }
