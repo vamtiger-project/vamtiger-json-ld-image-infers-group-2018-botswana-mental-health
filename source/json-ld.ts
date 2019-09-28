@@ -49,6 +49,5 @@ export default async function() {
         }
     });
 
-    console.log(event);
-    self.dispatchEvent(event);
+    dispatchEvent(event);
 }
