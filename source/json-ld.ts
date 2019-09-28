@@ -9,7 +9,7 @@ import json from './json';
 import text from './text';
 
 const { dispatchEvent } = self;
-const eventName = 'vamtiger-browser-method-dequeue' as CustomEventName.vamtigerBrowserMethod;
+const eventName = 'vamtiger-browser-method' as CustomEventName.vamtigerBrowserMethod;
 const action = 'vamtiger-browser-method-dequeue' as HandleJsonLdAction.dequeue;
 const params = {
     key
