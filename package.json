@@ -2,7 +2,7 @@
     "name": "vamtiger-json-ld-image-infers-group-botswana-mental-health",
     "version": "0.0.4-0",
     "description": "VAMTIGER JSON-LD Infers Group 2018 Botswana Mental Health",
-    "main": "build",
+    "main": "build/vamtiger-json-ld-image-infers-group-botswana-mental-health.js",
     "scripts": {
         "test": "npm run clean && npm run build && npm run bundle-node-test && npm run bundle-browser-test && npm run mocha && npm run bundle-source",
         "mocha": "mocha build/test/node --recursive",
