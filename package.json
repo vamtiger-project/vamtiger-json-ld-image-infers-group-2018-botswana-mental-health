@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-json-ld-image-infers-group-botswana-mental-health",
-    "version": "0.0.6",
+    "version": "0.0.7-0",
     "description": "VAMTIGER JSON-LD Infers Group 2018 Botswana Mental Health",
     "main": "build/vamtiger-json-ld-image-infers-group-botswana-mental-health.js",
     "scripts": {
