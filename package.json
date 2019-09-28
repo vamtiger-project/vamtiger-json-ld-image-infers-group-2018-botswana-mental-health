@@ -1,6 +1,6 @@
 {
-    "name": "vamtiger-json-ld-image-infers-group-2018-botswana-mental-health",
-    "version": "0.0.2-0",
+    "name": "vamtiger-json-ld-image-infers-group-botswana-mental-health",
+    "version": "0.0.2",
     "description": "VAMTIGER JSON-LD Infers Group 2018 Botswana Mental Health",
     "main": "build",
     "scripts": {
@@ -8,10 +8,10 @@
         "mocha": "mocha build/test/node --recursive",
         "build": "tsc",
         "commit": "npm run bundle && vamtiger-node-typescript-commit --push --publish --buildScript bundle",
-        "clean-bundle": "vamtiger-remove -d build -p \"(vamtiger-json-ld-image-infers-group-2018-botswana-mental-health).(js(.map)?|d.ts)\"",
+        "clean-bundle": "vamtiger-remove -d build -p \"(vamtiger-json-ld-image-infers-group-botswana-mental-health).(js(.map)?|d.ts)\"",
         "clean": "rm -rf build/*",
         "clean-install": "rm -rf package-lock.json node_modules && npm i",
-        "bundle-source": "vamtiger-bundle-typescript --relativePath --entryFilePath source/vamtiger-json-ld-image-infers-group-2018-botswana-mental-health.ts --bundleFilePath build/vamtiger-json-ld-image-infers-group-2018-botswana-mental-health.js --format iife --sourcemap true --copySourceMap --minify",
+        "bundle-source": "vamtiger-bundle-typescript --relativePath --entryFilePath source/vamtiger-json-ld-image-infers-group-botswana-mental-health.ts --bundleFilePath build/vamtiger-json-ld-image-infers-group-botswana-mental-health.js --format iife --sourcemap true --copySourceMap --minify",
         "bundle-node-test": "vamtiger-bundle-typescript --relativePath --entryFilePath source/test/node.ts --bundleFilePath build/test/node.js --format cjs --sourcemap true --copySourceMap --minify",
         "bundle-browser-test": "vamtiger-bundle-typescript --relativePath --entryFilePath source/test/browser.ts --bundleFilePath build/test/browser.js --format iife --sourcemap true --copySourceMap --minify",
         "bundle": "npm test && npm run bundle-source && npm run clean-bundle",
@@ -31,7 +31,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/vamtiger-project/vamtiger-json-ld-image-infers-group-2018-botswana-mental-health.git"
+        "url": "git+https://github.com/vamtiger-project/vamtiger-json-ld-image-infers-group-botswana-mental-health.git"
     },
     "keywords": [
         "vamtiger",
@@ -44,9 +44,9 @@
     "author": "Vamtiger Immortalles",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/vamtiger-project/vamtiger-json-ld-image-infers-group-2018-botswana-mental-health/issues"
+        "url": "https://github.com/vamtiger-project/vamtiger-json-ld-image-infers-group-botswana-mental-health/issues"
     },
-    "homepage": "https://github.com/vamtiger-project/vamtiger-json-ld-image-infers-group-2018-botswana-mental-health#readme",
+    "homepage": "https://github.com/vamtiger-project/vamtiger-json-ld-image-infers-group-botswana-mental-health#readme",
     "types": "build/index.d.ts",
     "devDependencies": {
         "@types/chai": "^4.2.0",
