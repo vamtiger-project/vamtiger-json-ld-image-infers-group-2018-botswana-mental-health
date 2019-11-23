@@ -6,25 +6,22 @@ import { key } from './types';
 import getData from './get-data';
 
 const eventName = 'vamtiger-browser-method' as CustomEventName.vamtigerBrowserMethod;
-const action = 'vamtiger-browser-method-dequeue' as HandleJsonLdAction.dequeue;
-const params = {
-    key
-};
+const action = 'vamtiger-browser-method-handle-json-ld-loaded' as HandleJsonLdAction.dequeue;
 const eventParams = {
     bubbles: true
 };
-const data = getData();
 
 export default async function() {
+    const data = await getData();
+    const params = {
+        key,
+        ...data
+    };
     const event = new CustomEvent(eventName, {
         ...eventParams,
         detail: {
             action,
-            params: {
-                ...params,
-                match: true,
-                data
-            }
+            params
         }
     });
 

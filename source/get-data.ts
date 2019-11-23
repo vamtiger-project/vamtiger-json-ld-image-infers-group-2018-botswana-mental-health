@@ -8,7 +8,7 @@ const jsonLdBase = {
     '@type': 'ImageObject'
 };
 
-export default function () {
+export default async function () {
     const jsonLd = {
         ...jsonLdBase,
         name: text['name.txt'],
